@@ -1,0 +1,14 @@
+The steps to Connecting to a DB with JDBC:
+  1. Create a Db/Schema to connect to
+  2. Ensure the appropriate Driver is added tot he project build path
+  3. Open a connection to the MySQL Server
+  4. Create a Statement Object
+  5. Execute Statement object query
+  6. Process the ResultSet from the query execution
+  7. Close your objects and the connection
+
+executeQuery() will return a ResultSet and is generally used for select queries ona  DB sinc ethey return results
+updateQuery() will return an int detailing how many rows were affecte by the query
+next() Moves the cursor to the next row in the ResultSet
+
+All 3 can be seen being utilized in the DBUtilities Class included in the Repo.
